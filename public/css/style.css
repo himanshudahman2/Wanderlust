@@ -1,0 +1,154 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+    display: flex;
+}
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links{
+    width: 100%;
+}
+.f-info-socials{
+    width: 100%;
+    font-size: 1.2rem;
+}
+.f-info-socials i {
+    margin-right: 1rem;
+}
+
+
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding:0 !important;
+}
+
+.card-text p {
+   font-weight: 400 !important;
+}
+
+.listing_link{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity:0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+
+.show-img{
+    height: 30vh;
+    
+}
+
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 1rem;
+}
+.f-info{
+    flex-shrink: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 430px;
+    bottom: 0;
+}
+.delete-in-show{
+    background-color: #fe424d;
+    color: white; /* Text color */
+    padding: 8px 10px; /* Adjust padding as needed */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px;
+}
+.card-img-top.show-img {
+    max-width: 30%; /* Ensure image does not exceed its container's width */
+    height: 250px; /* Maintain aspect ratio */
+    display: block; /* Remove any default inline styling */
+   
+    
+   
+}
+
+.row-show{
+    margin-left: 200px;
+    margin-top: 30px;
+}
+.show-btn{
+    margin-left: 90px;
+}
+
+.delete-review-btn{
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.review{
+    margin-left: 0.5rem;
+}
+
+.loginsignup{
+    margin-left: 55rem !important;
+}
+
+.colorchange{
+    background-color: #fe424d !important ;
+    color: white !important;
+    border:#fe424d !important ;
+    border-radius: 25px !important;
+}
+
+.colorchange i{
+    display: inline;
+    margin-right: 3px !important; 
+    
+}
+
+
+.search-input{
+    border-radius: 25px !important;
+    padding: 0.5rem 3rem 0.5rem 3rem !important;
+   
+}

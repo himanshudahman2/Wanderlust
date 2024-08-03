@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@1,200..800&display=swap" rel="stylesheet">
+    <link href="/css/rating.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-light border-bottom sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/listings"><i class="fa-solid fa-compass"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav me-auto">
+                        
+                        <a class="nav-link" href="/listings">Explore</a>
+                        
+                    </div>
+                    <div class="search-bar">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2 w-75 search-input" type="search" placeholder="Search " >
+                            <button class="btn btn-outline-success colorchange" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+                          </form>
+                    </div>
+                    <div class="navbar-nav loginsignup">
+                        <a class="nav-link" href="/listings/new">Add New Destination Hub</a>
+                      <% if(!currUser){%>
+                        <a class="nav-link" href="/signup"><b>Sign Up</b></a>
+                        <a class="nav-link" href="/login"><b>Login</b></a>
+                     <% }%>
+                      <% if(currUser){%>
+                        <a class="nav-link" href="/logout">Logout</a>
+
+                      <%}%>  
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <%-include("../includes/flash.ejs")%>
+        <%-body%>
+    </div>
+    <div class="footer">
+        <footer>
+            <div class="f-info">
+                <div class="f-info-socials">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div>&copy;Wanderlust Private Limited</div>
+                <div class="f-info-links">
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Terms</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
